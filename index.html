@@ -29,20 +29,58 @@
 
 <body>
     <div class="container">
-        <div class="h2 my-5">홈페이지 리뉴얼 중입니다.</div>
+        <div class="pl-1 h2 my-5">훤 세무회계사무소 홈페이지 리뉴얼 중입니다.</div>
         <div class="row" style="border-top:rgb(9,28,90) solid 1px;">
-            <div class="pt-5 col-sm-12 col-md-6">
+            <div id="carouselExampleIndicators" class="col-12 carousel slide" data-ride="carousel">
+                <ol class="carousel-indicators">
+                    <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+                    <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+                </ol>
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <img src="carousel_1.png" class="d-block w-100" alt="...">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="thumbnail.png" class="d-block w-100" alt="...">
+                    </div>
+                </div>
+                <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="sr-only">Previous</span>
+                </a>
+                <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="sr-only">Next</span>
+                </a>
+            </div>
+            <div class="pl-5 pt-5 col-sm-12 col-md-6">
+                <div class="h3">대표 공인회계사 : 문 훤</div>
+                <div>- (전)전북대학교 상과대학 경영학부 회계학전공 졸업</div>
+                <div>- (전)삼일회계법인 근무</div>
+                <div>- (현)훤 세무회계사무소 대표 공인회계사</div>
+                <div>- (현)한국공인회계사회 청년위원회 청년소통분과 분과위원장</div>
+                <div class="pt-5 h3">주요 업무</div>
+                <div>- 회계감사, 회계자문, 결산지원, 사업비 정산, 주식가치평가</div>
+                <div>- 기장대리, 세무조정, 세무상담 및 신고, 기업진단</div>
+                <div>- 양도, 상속, 증여, 조세불복, 조사대응</div>
+                <div class="col-sm-12 pt-5 h3">
+                    <button class="btn btn-primary" onclick="location.href='#'" disabled>상담신청하기(준비중)</button> 
+                </div>
+            </div>
+            <div class="pl-5 pt-5 col-sm-12 col-md-6">
                 <div class="h3">오시는 길</div>
                 <div id="map" style="width:500px;height:400px;"></div>
             </div>
-            <div class="pt-5 col-sm-12 col-md-6">
-                <div class="h3">연락처</div>
-                <div>
-                    <div>Tel : 063-273-8110~1</div>
-                    <div>Fax : 063-251-8212</div>
-                    <div>Mobile : 010-6534-1108</div>
-                    <div>Mail : cpa.hwon@gmail.com</div>
-                </div>
+        </div>
+    </div>
+    <div class="row">
+        <div class="pl-5 py-3 col-sm-12" style="background-color:rgb(205, 203, 203);">
+            <div class="h3">연락처</div>
+            <div>
+                <div>Tel : 063-273-8110~1</div>
+                <div>Fax : 063-251-8212</div>
+                <div>Mobile : 010-6534-1108</div>
+                <div>Mail : cpa.hwon@gmail.com</div>
             </div>
         </div>
     </div>
@@ -66,9 +104,8 @@
         // 마커가 지도 위에 표시되도록 설정합니다
         marker.setMap(map);
     </script>
+    <script src="https://code.jquery.com/jquery-3.4.1.js" integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU=" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
-        crossorigin="anonymous"></script>
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
         crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
         crossorigin="anonymous"></script>
