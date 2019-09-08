@@ -67,7 +67,7 @@
                     <button class="btn btn-primary" onclick="location.href='#'" disabled>상담신청하기(준비중)</button>
                 </div>
             </div>
-            <div class="col-sm-12 col-md-6">
+            <div class="col-sm-12 col-md-6" style="padding:0px;">
                 <div class="pl-5 pt-5 h3">오시는 길</div>
                 <div class="pb-3" id="map" style="width:500px;height:400px;"></div>
             </div>
@@ -104,7 +104,7 @@
         // 마커가 지도 위에 표시되도록 설정합니다
         marker.setMap(map);
 
-        var iwContent = '<div style="padding:5px;">훤 세무회계사무소</div>', // 인포윈도우에 표출될 내용으로 HTML 문자열이나 document element가 가능합니다
+        var iwContent = '<div style="padding:2px;">훤 세무회계사무소</div>', // 인포윈도우에 표출될 내용으로 HTML 문자열이나 document element가 가능합니다
             iwPosition = new kakao.maps.LatLng(35.839948, 127.123788); //인포윈도우 표시 위치입니다
 
         // 인포윈도우를 생성합니다
